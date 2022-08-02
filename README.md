@@ -1,4 +1,4 @@
-# PHP
+# PHP plugins
 PHP snippets for plugins
 
 *\What this README includes/*
