@@ -6,5 +6,4 @@ PHP snippets for plugins
 - WordPress Plugin Snippets
 - Comments for placements and use
 
-      ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
