@@ -1,0 +1,19 @@
+<!-- Below is an example of PHP written within a
+html H1 tag and P tag -->
+<h1><?php bloginfo('name'); ?></h1>
+<p><b><?php bloginfo('description'); ?></b></p>
+<!-- Below is an example of a function in PHP
+What is show below as two P tags is also shown thanks 
+to this greet function below.  This is useful to fill out documents
+and long forms. -->
+<?php
+function greet($name, $food)
+{
+    echo "<p>Hi, my name is $name and my favorite food is $food.</p>";
+}
+greet('Tom', 'BBQ');
+greet('Alan', 'Chinese');
+?>
+<!-- Below are html P tags which represents what is created in the above funtion. -->
+<p>Hi, my name is Tom and my favorite food is BBQ</p>
+<p>Hi, my name is Alan and my favorite food is Chinese</p>
