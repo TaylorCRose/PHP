@@ -1,0 +1,39 @@
+<!-- Below are examples of Arrays and Loops.
+These are important within daily coding so get familiar with them and 
+how they operate. -->
+
+<?php
+
+$names = array('Taylor', 'Margie', 'Thess', 'Pyper');
+
+$count = 1;
+// Loop for counter up to 100 within a list tag.
+while ($count < 101) {
+    echo "<li>$count</li>";
+    $count++;
+}
+?>
+
+
+
+
+<!-- Below is a while loop, using the same array as above 
+we can call them into a loop and fill out sentences using 
+the information passed through the while loop.  Pretty neat 
+stuff. -->
+<?php
+// an array of names 
+$names = array('Jon', 'Jane', 'Paul', 'Tommy');
+
+$count = 0;
+// Loop for calling names from array above to fill out the 
+// sentence.  This is a "while loop" Very important and used in WP.
+while ($count < count($names)) {
+    echo "<li>Hi, I'm $names[$count] Welcome to our home. </li>";
+    $count++;
+}
+
+
+?>
+<!-- This is being called be the original PHP code above.  -->
+<p>Hi, my name is <?php echo $names[3]; ?>.</p>
