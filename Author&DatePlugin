@@ -1,0 +1,21 @@
+
+/* the below snippet is a WP plugin which allows for the user to input the author and date to multiple posts throughout the website.
+To make it funtional replace the "Inserts" with relevant information."  
+If you want to exclude from certain posts, add in an If statement. */
+
+<?php
+
+/*
+ Plugin Name: Add Author & Date
+ Description: This plugin will add the Author and Date to every post.
+ Version: 1.0
+ Author: Taylor Rose
+ Author URI: https://www.taylorcrose.com/
+*/
+
+add_filter('the_content', 'addToEndOfPost');
+
+function addToEndOfPost($content)
+{
+    return $content . '<p>Insert Authors Name Here</p><p>Insert Date Here</p>';
+}
